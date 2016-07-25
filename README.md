@@ -4,7 +4,7 @@ java版图片裁剪插件，前端图片裁剪插件可换任意后台裁剪
 `<!DOCTYPE html>`  
 `<html xmlns="http://www.w3.org/1999/xhtml">`  
 `<head>`  
-`><meta charset="utf-8" />`  
+`	<meta charset="utf-8" />`  
 `    <meta name="format-detection" content="telephone=no" />`  
 `    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />`  
 `    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />`  
