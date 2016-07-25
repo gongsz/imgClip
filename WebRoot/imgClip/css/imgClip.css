@@ -1,0 +1,571 @@
+﻿.max-wrap {
+    width:736px;
+    height:432px;
+    margin:0px;
+    padding:0px;
+    font-size:14px;
+    font-family: "Lucida Grande", Lucida Sans Unicode, Hiragino Sans GB, WenQuanYi Micro Hei, Verdana, Aril, sans-serif;
+    position:relative;
+    color:#333;
+}
+.max-wrap * {
+    box-sizing:border-box;
+}
+.max-wrap .sys-img-wrap ul {
+    -webkit-transition: left 200ms;
+    -moz-transition: left 200ms;
+    -o-transition: left 200ms;
+    transition: left 200ms;
+}
+.img-select-wrap {
+}
+.img-clip-wrap {
+    display:none;
+}
+.max-wrap .wrap-s-left,
+.max-wrap .wrap-s-right {
+    position:absolute;
+    top:0px;
+    height:432px;
+    padding:20px 40px;
+    text-align:left;
+}
+.max-wrap .wrap-s-left {
+    left:0px;
+    width:501px;
+    border-right:1px solid #c4c4c4;
+}
+.max-wrap .wrap-s-right {
+    right:0px;
+    width:235px;
+
+    overflow:hidden;
+}
+/*图片预览*/
+.max-wrap .wrap-s-right .sr-title{
+    font-size:18px;
+}
+
+.max-wrap .wrap-s-right .sr-maximg{
+    padding-top:27px;
+    font-size:12px;
+}
+.sr-maximg .max-img-wrap{
+    width:100px;
+    height:100px;
+    overflow:hidden;
+}
+.img-select-wrap .sr-maximg .max-img-wrap img{
+    width:100px;
+    height:100px;
+}
+.sr-maximg>span{
+    font-size:12px;
+    display:block;
+    padding-top:5px;
+}
+
+.max-wrap .wrap-s-right .sr-minimg{
+    padding-top:34px;
+    font-size:12px;
+}
+.sr-minimg .min-img-wrap{
+    width:55px;
+    height:55px;
+    overflow:hidden;
+}
+.img-select-wrap .sr-minimg .min-img-wrap img{
+    width:55px;
+    height:55px;
+}
+.sr-minimg>span{
+    font-size:12px;
+    display:block;
+    padding-top:5px;
+}
+
+.max-wrap .wrap-s-right .sr-history-wrap{
+    padding-top:34px;
+    font-size:12px;
+}
+.sr-history-wrap>span{
+    font-size:12px;
+    display:block;
+    padding-bottom:5px;
+}
+.sr-history-wrap>ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    display:block;
+    width:165px;
+}
+.sr-history-wrap>ul>li{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    float:left;
+    margin-right:10px;
+    overflow:hidden;
+    cursor:pointer;
+    width:45px;
+    height:45px;
+    position:relative
+}
+.sr-history-wrap>ul>li img{
+    width:45px;
+    height:45px;
+}
+.sr-history-wrap>ul>li span{
+    background:url('img/bg.png') no-repeat -396px 0px;
+    display:inline-block;
+    height:45px;
+    width:45px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    zoom:1;
+    visibility:hidden;
+}
+.sr-history-wrap>ul>li.visiHisHot span{
+    visibility:visible;
+}
+/*图像裁剪*/
+.max-wrap .wrap-s-left .img-workspace {
+    height:302px;
+    width:420px;
+    position:relative;
+    user-select:none;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+}
+.max-wrap.img-clip-wrap .wrap-s-left .img-workspace {
+    background-color:#f1f1f1;
+}
+.max-wrap.img-clip-wrap .wrap-s-left .img-workspace img{
+    vertical-align:middle;
+    /*max-width:420px;
+    max-height:302px;*/
+}
+.img-workspace .clip-img-wrap {
+    
+}
+.img-workspace .clip-img-wrap .bottom-shade{
+    position:absolute;
+    left:0px;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    background-color:#000;
+    opacity:0.5;
+    z-index:10;
+}
+.img-workspace .clip-img-wrap .center-shade{
+    position:absolute;
+    left:0px;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    background-color:#000;
+    opacity:0.5;
+    z-index:10;
+}
+.img-workspace .clip-img-wrap .drag-shade{
+    position:absolute;
+    z-index:11;
+    cursor:all-scroll;
+}
+
+.img-workspace .clip-img-wrap .drag-shade .blueborder{
+    position:absolute;
+    z-index:15;
+    border: 1px solid #0a7cca;
+    left:0px;
+    top:0px;
+    bottom:0px;
+    right:0px;
+}
+.img-workspace .clip-img-wrap .drag-shade .drag-shade-full{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:12;
+}
+.img-workspace .clip-img-wrap .drag-shade .drag-shade-full-radius{
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index:13;
+    border-radius:50%;
+}
+.img-workspace .clip-img-wrap .drag-shade .radiusborder{
+    position:absolute;
+    left:0px;
+    top:0px;
+    bottom:0px;
+    right:0px;
+    z-index:14;
+    border-radius:50%;
+    border:1px dashed #fff;
+    opacity:0.6;
+}
+.img-workspace .drag-shade .jcrop-handle {
+    width:4px;
+    height:4px;
+    border:none;
+    background-color:#0a7cca;
+    position:absolute;
+    display:block;
+    z-index:16;
+}
+.img-workspace .drag-shade .jcrop-handle.tl {
+    top: -2px; 
+    left: -2px;
+    cursor:nw-resize;
+}
+.img-workspace .drag-shade .jcrop-handle.tc {
+    top: -2px; 
+    left: 50%; 
+    margin-left: -2px;
+    cursor:n-resize;
+}
+.img-workspace .drag-shade .jcrop-handle.tr {
+    top: -2px; 
+    right: -2px;
+    cursor:ne-resize;
+}
+.img-workspace .drag-shade .jcrop-handle.cl {
+    top: 50%; 
+    left: -2px; 
+    margin-top: -2px;
+    cursor:ew-resize;
+}
+.img-workspace .drag-shade .jcrop-handle.cr {
+    top: 50%; 
+    right: -2px; 
+    margin-top: -2px;
+    cursor:ew-resize;
+}
+.img-workspace .drag-shade .jcrop-handle.bl {
+    bottom: -2px; 
+    left: -2px;
+    cursor:sw-resize;
+}
+.img-workspace .drag-shade .jcrop-handle.bc {
+    bottom: -2px; 
+    left: 50%; 
+    margin-left: -2px;
+    cursor:n-resize;
+}
+.img-workspace .drag-shade .jcrop-handle.br {
+    bottom: -2px; 
+    right: -2px;
+    cursor:se-resize;
+}
+
+.img-workspace .drag-shade .jcrop-handle.br {
+    bottom: -2px; 
+    right: -2px;
+    cursor:se-resize;
+}
+.img-workspace .drag-shade .jcrop-handle.br {
+    bottom: -2px; 
+    right: -2px;
+    cursor:se-resize;
+}
+.img-workspace .drag-shade .jcrop-handle.br {
+    bottom: -2px; 
+    right: -2px;
+    cursor:se-resize;
+}
+.img-workspace .drag-shade .jcrop-dragbar {
+    position: absolute; 
+    z-index:15;
+}
+.img-workspace .drag-shade .jcrop-dragbar.l {
+    height: 100%; 
+    width: 4px; 
+    left: -2px; 
+    top: 0px; 
+    cursor: ew-resize;
+}
+.img-workspace .drag-shade .jcrop-dragbar.r {
+    height: 100%; 
+    width: 4px; 
+    right: -2px; 
+    top: 0px; 
+    cursor: ew-resize;
+}
+.img-workspace .drag-shade .jcrop-dragbar.t {
+    height:4px; 
+    width: 100%; 
+    top: -2px; 
+    left: 0px; 
+    cursor:n-resize;
+}
+.img-workspace .drag-shade .jcrop-dragbar.b {
+    height:4px; 
+    width: 100%; 
+    bottom: -2px; 
+    left: 0px; 
+    cursor:n-resize;
+}
+/*虚线条*/
+.img-workspace .drag-shade .jcrop-line {
+    position: absolute;
+    z-index:14;
+    opacity:0.6;
+}
+.img-workspace .drag-shade .jcrop-line.v33 {
+    left: 33.3%; 
+    top: 0px; 
+    height: 100%; 
+    width: 1px; 
+    border-left: 1px dashed #fff;
+}
+.img-workspace .drag-shade .jcrop-line.v66 {
+    left: 66.6%; 
+    top: 0px; 
+    height: 100%; 
+    width: 1px; 
+    border-left: 1px dashed #fff;
+}
+.img-workspace .drag-shade .jcrop-line.h33 {
+    top: 33.3%; 
+    left: 0px; 
+    height: 1px; 
+    width: 100%; 
+    border-top: 1px dashed #fff;
+}
+.img-workspace .drag-shade .jcrop-line.h66 {
+    top: 66.6%; 
+    left: 0px; 
+    height: 1px; 
+    width: 100%; 
+    border-top: 1px dashed #fff;
+}
+
+/*按钮*/
+.max-wrap .wrap-s-left .btn-tool-wrap {
+    padding-top:50px;
+    height:90px;
+}
+
+.ml-btn {
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+  outline: 0;
+  border: 0;
+  height:40px;
+  margin: 0px 10px 0px 0px;
+  white-space: nowrap;
+  min-width: 130px;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 16px;
+  font-style: inherit;
+  font-variant: inherit;
+  font-family: inherit;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), all 300ms ease-out, background-color 300ms ease-out;
+  transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), all 300ms ease-out, background-color 300ms ease-out;
+  -moz-transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), all 300ms ease-out, background-color 300ms ease-out;
+  -o-transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), all 300ms ease-out, background-color 300ms ease-out;
+  -ms-transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), all 300ms ease-out, background-color 300ms ease-out;
+  z-index: 1;
+  color:#555;
+}
+.ml-eft-default.ml-btn:focus, .ml-eft-default.ml-btn:hover {
+  text-decoration: none;
+}
+
+.ml-eft-default.ml-btn.ml-active,
+.ml-eft-default.ml-btn:active {
+  background-image: none;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.15);
+}
+
+.ml-eft-default.bg-red.ml-btn {
+  background-color: #d40000;
+  color:#fff;
+}
+
+.ml-eft-default.bg-red:hover {
+  background-color: #ec0000;
+}
+
+.ml-eft-default.bg-red:active {
+  background-color: #c50101;
+}
+
+.ml-btn.ml-disabled, .ml-btn[disabled], fieldset[disabled] .ml-btn {
+  pointer-events: none;
+  border-color: transparent;
+  cursor: not-allowed;
+  opacity: 0.45;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  cursor:default;
+}
+/*提示成功和失败*/
+.save-tip-wrap {
+    padding-left:20px;
+    margin-left:20px;
+    height:16px;
+    background:url(img/setportrait_status.png) no-repeat;
+    font-size:14px;
+    line-height:17px;
+    display:none;
+}
+.save-tip-wrap.succeed{
+    display:inline-block;
+    background-position:left 0px;
+}
+.save-tip-wrap.erroe{
+    display:inline-block;
+    background-position:left -18px;
+}
+
+/*方案*/
+.max-wrap .method-title {
+    display:block;
+    font-size:16px;
+}
+.max-wrap .upload-tip-title {
+    display:block;
+    font-size:14px;
+    color:#999;
+    padding-top:10px;
+    padding-bottom:50px;
+}
+.max-wrap .upload-btn-wrap {
+    padding-top:25px;
+}
+.max-wrap .upload-btn-wrap input{
+    display:none;
+}
+.max-wrap .sys-img-wrap {
+    height:80px;
+    width:100%;
+    margin-top:25px;
+    position:relative;
+    overflow:hidden;
+    padding:0px 35px;
+}
+.sys-img-wrap .sysimg-btn-prev,
+.sys-img-wrap .sysimg-btn-next {
+    position:absolute;
+    display:block;
+    top:0px;
+    width:35px;
+    height:80px;
+    cursor:pointer;
+    background:url('img/bg.png') no-repeat #fff;
+    z-index:999
+}
+.sys-img-wrap .sysimg-btn-prev {
+    left:0px;
+    background-position:0px 22px;
+}
+
+.sys-img-wrap .sysimg-btn-next {
+    right:0px;
+    background-position:-195px 22px;
+}
+.sys-img-wrap .sysimg-btn-prev.canclick {
+    left:0px;
+    background-position:-135px 22px;
+}
+
+.sys-img-wrap .sysimg-btn-next.canclick {
+    right:0px;
+    background-position:-60px 22px;
+}
+.max-wrap .sys-img-wrap ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+}
+.max-wrap .sys-img-wrap ul>li{
+    width:80px;
+    height:80px;
+    overflow:hidden;
+    float:left;
+    list-style:none;
+    margin-right:10px;
+    cursor:pointer;
+    position:relative;
+}
+
+.max-wrap .sys-img-wrap ul>li img{
+    width:80px;
+    height:80px;
+}
+.max-wrap .sys-img-wrap ul>li span{
+    background:url('img/bg.png') no-repeat -271px 0px;
+    display:inline-block;
+    height:80px;
+    width:80px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    zoom:1;
+    visibility:hidden;
+}
+.max-wrap .sys-img-wrap ul>li.visiHisHot span{
+    visibility:visible;
+}
+
+/*图片旋转样式*/
+.rotateAngle-90 {
+    transform:rotate(90deg);
+    -ms-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    -o-transform:rotate(90deg);
+}
+.rotateAngle-180 {
+    transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    -o-transform:rotate(180deg);
+}
+.rotateAngle-270 {
+    transform:rotate(270deg);
+    -ms-transform:rotate(270deg);
+    -moz-transform:rotate(270deg);
+    -webkit-transform:rotate(270deg);
+    -o-transform:rotate(270deg);
+}
+
+.rotateAngle-left,
+.rotateAngle-right {
+    position:absolute;
+    bottom:0px;
+    width:30px;
+    height:30px;
+    z-index:9999;
+    cursor:pointer;
+}
+.rotateAngle-left {
+    left:0px;
+    background:url('img/rotate-left.png') no-repeat center center;
+}
+.rotateAngle-right {
+    right:0px;
+    background:url('img/rotate-right.png') no-repeat center center;
+}

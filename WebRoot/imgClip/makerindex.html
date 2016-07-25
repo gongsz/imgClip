@@ -1,0 +1,915 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <link href="resource/css/index_20160625.css" rel="stylesheet" />
+    <link href="resource/css/makerindex.css" rel="stylesheet" />
+    <script src="scripts/jquery-1.7.1.min.js" type="text/javascript"></script>    
+</head>
+<body>
+    <div id="floor_box" class="fixed-nav">
+        <a href="#floor1" class="floor f1"></a>
+        <a href="#floor2" class="floor f2"></a>
+        <a href="#floor3" class="floor f3"></a>
+        <a href="#floor4" class="floor f4"></a>
+        <a href="#floor5" class="floor f5"></a>
+    </div>
+    <div id="floor_backtop" class="fixed-backtop">
+        <a href="javascript:;" class="floor f1"></a>
+        <a id="nav_gotop" href="javascript:;" class="floor f2"></a>
+    </div>
+    <div id="fixed_serach" class="fixed-serach-wrap">
+        <div class="mk-content">
+            <div class="fixed-logo">
+                <a href="/"><img src="images/fixed-logo.png" /></a>
+            </div>
+            <div class="mk-serach-content">
+                <div class="mk-serach-input-wrap">
+                    <div id="mk_ddl_serach" attr-selindex="0" class="mk-ddl-serach-type">
+                        <div class="mk-sel-type">
+                            <span class="mk-sel-text">找众包</span>
+                            <span class="mk-down-arrow"></span>
+                        </div>
+                        <div class="ml-sel-list">
+                            <ul>
+                                <li attr-index="0" style="display:none"><a href="javascript:;">找众包</a></li>
+                                <li attr-index="1"><a href="javascript:;">找服务</a></li>
+                                <li attr-index="2"><a href="javascript:;">找商机</a></li>
+                                <li attr-index="3"><a href="javascript:;">找政策</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="serach-ico">
+
+                    </div>
+                    <input type="text" placeholder="请输入关键字" />
+                    <div class="serach-btn">
+                        搜索
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="maker_wrap" class="maker-wrap">
+        <div class="mk-top-wrap">
+            <div class="mk-content">
+                创客中国国家创新创业公共服务平台
+                <div class="position-left">
+                    欢迎致电&nbsp;<span>010-68200382</span>
+                </div>
+                <div class="position-right">
+                    <ul>
+                        <li><a class="login" href="#">请登录</a></li>
+                        <li><a class="register" href="#">免费注册</a></li>
+                        <li>
+                            <a class="richscan" href="#">
+                                扫一扫
+                                <div class="wechat-qrcode">
+                                    <img src="images/top_xlwb_big.jpg" />
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mk-serach-wrap">
+            <div class="mk-content">
+                <!--检索框-->
+                <div class="mk-serach-content">
+                    <div class="mk-serach-type">
+                        <ul id="serach_type_ul">
+                            <li class="active">找众包</li>
+                            <li>找服务</li>
+                            <li>找商机</li>
+                            <li>找政策</li>
+                        </ul>
+                    </div>
+                    <div class="mk-serach-input-wrap">
+                        <div class="serach-ico">
+
+                        </div>
+                        <input type="text" placeholder="请输入关键字" />
+                        <div class="serach-btn">
+                            搜索
+                        </div>
+                    </div>
+                </div>
+
+                <div class="position-left">
+                    <a href="/"><img src="images/maker_login.png" /></a>
+                </div>
+                <div class="position-right">
+                    <ul>
+                        <li><a class="login" href="#">双创指数</a></li>
+                        <li><a class="register" href="#">成功案例</a></li>
+                        <li><a class="richscan" href="#">网站优势</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="mk-menu-wrap">
+            <div class="mk-content">
+                <ul>
+                    <li class="active">
+                        <span></span>
+                        <a href="#">首页</a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <a href="#">创客大赛</a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <a href="#">创客大学</a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <a href="#">众创智造</a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <a href="#">众包服务</a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <a href="#">众筹服务</a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <a href="#">产业链</a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <a href="#">众扶服务</a>
+                    </li>
+                    <li>
+                        <span></span>
+                        <a href="#">直播活动</a>
+                    </li>
+                    <li class="tip">
+                        <span></span>
+                        <a href="#">通知公告</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mk-exhibition-wrap" style="background-image: url(images/1.jpg);background-position:center center">
+            <div class="mk-content">
+                <div class="mk-max-img">
+                </div>
+                <div class="mk-thumbnail-list">
+                    <div class="item active" attr-index="0" attr-img="images/1.jpg">
+                        <div class="thumbnail-wrap">
+                            <img src="images/1.jpg" />
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="item" attr-index="1" attr-img="images/2.jpg">
+                        <div class="thumbnail-wrap">
+                            <img src="images/2.jpg" />
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="item" attr-index="2" attr-img="images/3.jpg">
+                        <div class="thumbnail-wrap">
+                            <img src="images/3.jpg" />
+                        </div>
+                        <span></span>
+                    </div>
+                    <div class="item" attr-index="3" attr-img="images/4.jpg">
+                        <div class="thumbnail-wrap">
+                            <img src="images/4.jpg" />
+                        </div>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="mk-navigation-list">
+                    <div class="n-title">
+                        快速导航入口
+                    </div>
+                    <div class="n-body">
+                        <div class="cnt-item">
+                            <div class="i-title">
+                                创客
+                            </div>
+                            <div class="i-content">
+                                <ul>
+                                    <li><a href="#">参加赛事</a></li>
+                                    <li><a href="#">应征众包</a></li>
+                                    <li><a href="#">培训提升</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cnt-item">
+                            <div class="i-title">
+                                企业
+                            </div>
+                            <div class="i-content">
+                                <ul>
+                                    <li><a href="#">发布产品</a></li>
+                                    <li><a href="#">发布需求</a></li>
+                                    <li><a href="#">寻找商机</a></li>
+                                    <li><a href="#">寻找服务</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="cnt-item">
+                            <div class="i-title">
+                                园区/政府
+                            </div>
+                            <div class="i-content">
+                                <ul>
+                                    <li><a href="#">发布活动</a></li>
+                                    <li><a href="#">发布政策</a></li>
+                                    <li><a href="#">管理平台</a></li>
+                                    <li><a href="#">申请合作</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="n-footer">
+                        我要成为
+                        <div class="left-btn">
+                        </div>
+                        <div class="right-btn">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mk-statistics-wrap">
+            <div class="mk-content">
+                <div class="three-item-s index1">
+                    <div class="item-wrap">
+                        <div class="sico">
+
+                        </div>
+                        <div class="sinfo">
+                            <div>
+                                3402
+                            </div>
+                            <span>
+                                产品发布数量
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="three-item-s index2">
+                    <div class="item-wrap">
+                        <div class="sico">
+
+                        </div>
+                        <div class="sinfo">
+                            <div>
+                                1142
+                            </div>
+                            <span>
+                                服务商入驻数量
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="three-item-s index3">
+                    <div class="item-wrap">
+                        <div class="sico">
+
+                        </div>
+                        <div class="sinfo">
+                            <div>
+                                14532
+                            </div>
+                            <span>
+                                众包提交数量
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mk-modules-wrap">
+            <div class="mk-content">
+                <div class="three-item-s index1">
+                    <div class="item-wrap">
+                        <div class="modules-type">
+                            发布会
+                        </div>
+                        <img src="images/1.png" />
+                    </div>
+                </div>
+                <div class="three-item-s index2">
+                    <div class="item-wrap">
+                        <div class="modules-type">
+                            众包
+                        </div>
+                        <img src="images/2.png" />
+                    </div>
+                </div>
+                <div class="three-item-s index3">
+                    <div class="item-wrap">
+                        <div class="modules-type">
+                            众筹
+                        </div>
+                        <img src="images/3.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="floor1" class="float">
+        <div class="float_left1 fl">
+            <p>
+                <span class="fl"><a href="#">我要参赛</a></span>
+                <span class="fr"><a href="#">管理赛区</a></span>
+                <span class="fl"><a href="#">发布作品</a></span>
+                <span class="fr"><a href="#">更多赛事</a></span>
+            </p>
+        </div>
+        <div class="float_left2 fl">
+            <div id="page2_roll" class="mk-roll-wrap" attr-npage="0">
+                <div class="float_left2_top pagecontent">
+                    <div class="roll-wrap">
+                        <p><a href="#"><img src="images/f1_banner_1.png" /></a></p>
+                    </div>
+                </div>
+                <div class="pagenation">
+                    <p>
+                        <span attr-index="0" class="active" attr-src="images/f1_banner_1.png" attr-url="#"></span>
+                        <span attr-index="1" attr-src="images/f1_banner_2.jpg" attr-url="#"></span>
+                        <span attr-index="2" attr-src="images/f1_banner_3.jpg" attr-url="#"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="float_left2_middle">
+                <p>公告</p>
+                <a href="#">更多</a>
+            </div>
+            <div class="float_left2_footer">
+                <ul>
+                    <li><a href="#">创客大赛的注意事项</a><label>2016.6.25</label></li>
+                    <li><a href="#">创客大赛的注意事项</a><label>2016.6.25</label></li>
+                    <li><a href="#">创客大赛的注意事项</a><label>2016.6.25</label></li>
+                    <li><a href="#">创客大赛的注意事项</a><label>2016.6.25</label></li>
+                </ul>
+            </div>
+        </div>
+        <div class="float_left3 fr">
+            <div>
+                <a href="#"><img src="images/zxzbh.png" /></a>
+                <span class="com_ing"></span>
+            </div>
+            <div>
+                <a href="#"><img src="images/cesasia.png" /></a>
+                <span class="com_ready"></span>
+            </div>
+            <div>
+                <a href="#"><img src="images/szsq.png" /></a>
+                <span class="com_ready"></span>
+            </div>
+            <div>
+                <a href="#"><img src="images/czzckds.jpg" /></a>
+                <span class="com_end"></span>
+            </div>
+            <div>
+                <a href="#"><img src="images/gdsdsq.jpg" /></a>
+                <span class="com_end"></span>
+            </div>
+        </div>
+    </div>
+    <div id="floor2" class="float">
+        <div class="float2_left1 fl">
+            <p><a href="#">一键直播</a></p>
+        </div>
+        <div class="float2_left2 fl">
+            <div class="float2_left2_live"><img src="images/live_top.jpg" /></div>
+            <div class="float_left2_middle float2_left2_middle">
+                <p>直播简介</p>
+            </div>
+            <div class="float2_left2_footer">
+                创客（Mak-er）“创”指创造，“客”指从事某种活动的人，“创客”本指勇于创新，努力将自己的创意变为现实的人。这个词译自英文单词“Mak-er”，源于美国麻省理工学院微观装配实验室的实验课题，此课题以创新为理念，以客户为中心，以个人设计、个人制造为核心内容，参与实验课题的学生即“创客”......
+            </div>
+        </div>
+        <div class="float2_left3 fr">
+            <div class="float2_left3_top">
+                <p class="fl">今日直播</p>
+                <p class="fr">历史直播</p>
+            </div>
+            <div class="float2_left3_content">
+                <div class="float2_left3_content1">
+                    <i class="autoline"></i>
+                    <div class="red">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="red">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="yellow">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="yellow">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="green">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="green">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="green">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="green">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="green">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="green">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="green">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="green">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="green">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                    <div class="green">
+                        <p class="live_time">12.30</p>
+                        <p class="live_point"><span></span></p>
+                        <p class="live_title">《番禺中小企业局面对面》</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="floor3" class="float">
+        <div class="float3_left1 fl">
+            <label>众包众筹</label>
+            <p>
+                <span><a href="#">我要众包</a></span>
+                <span><a href="#">我要众筹</a></span>
+                <span><a href="#">参与众包</a></span>
+                <span><a href="#">参与众筹</a></span>
+            </p>
+        </div>
+        <div class="float_left2 fl">
+
+            <div id="page3_roll" class="mk-roll-wrap page3_roll" attr-npage="0">
+                <div class="float3_left2_top pagecontent">
+                    <div class="roll-wrap">
+                        <p><a href="#"><img src="images/zbzc_banner.png" /></a></p>
+                    </div>
+                </div>
+                <div class="pagenation">
+                    <p>
+                        <span attr-index="0" class="active" attr-src="images/zbzc_banner.png" attr-url="#"></span>
+                        <span attr-index="1" attr-src="images/f1_banner_2.jpg" attr-url="#"></span>
+                        <span attr-index="2" attr-src="images/f1_banner_3.jpg" attr-url="#"></span>
+                    </p>
+                </div>
+            </div>
+            <div class="float_left2_middle">
+                <p>众包</p>
+                <a href="#">更多</a>
+            </div>
+            <div class="float3_left2_footer">
+                <ul>
+                    <li>
+                        <p class="zb_top">手机软件制作</p>
+                        <p class="zb_time">剩余<label>10</label>天</p>
+                        <p class="zb_content">制作一个手机软件，功能是在地图上显示注册用户的位置和信息</p>
+                    </li>
+                    <li>
+                        <p class="zb_top">手机软件制作</p>
+                        <p class="zb_time">剩余<label>10</label>天</p>
+                        <p class="zb_content">制作一个手机软件，功能是在地图上显示注册用户的位置和信息</p>
+                    </li>
+                    <li>
+                        <p class="zb_top">手机软件制作</p>
+                        <p class="zb_time">剩余<label>10</label>天</p>
+                        <p class="zb_content">制作一个手机软件，功能是在地图上显示注册用户的位置和信息</p>
+                    </li>
+                    <li>
+                        <p class="zb_top">手机软件制作</p>
+                        <p class="zb_time">剩余<label>10</label>天</p>
+                        <p class="zb_content">制作一个手机软件，功能是在地图上显示注册用户的位置和信息</p>
+                    </li>
+                    <li>
+                        <p class="zb_top">手机软件制作</p>
+                        <p class="zb_time">剩余<label>10</label>天</p>
+                        <p class="zb_content">制作一个手机软件，功能是在地图上显示注册用户的位置和信息</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="float3_left3 fr">
+            <p><img src="images/zcimg_1.png" /></p>
+            <p><img src="images/zcimg_2.png" /></p>
+            <span><a href="#">更多</a></span>
+        </div>
+    </div>
+    <div id="floor4" class="float">
+        <div class="float4_left1 fl">
+            <label class="float4_left1_l1">众扶服务</label>
+            <label class="float4_left1_l2">初创企业好帮手<br />成长企业催化剂</label>
+            <p>
+                <span><a href="#">成为服务商</a></span>
+                <span><a href="#">成为专家</a></span>
+            </p>
+        </div>
+        <div class="float4_left2_top fl">
+            <div class="fl f4big">
+                <a href="#"><img src="images/f4_img1.png" /></a>
+                <span>找场地</span>
+            </div>
+            <div class="fr f4big">
+                <a href="#"><img src="images/f4_img2.png" /></a>
+                <span>找人才</span>
+            </div>
+            <div class="fl f4big">
+                <a href="#"><img src="images/f4_img3.png" /></a>
+                <span>找财务外包</span>
+            </div>
+            <div class="fr f4small">
+                <p class="fl">
+                    <a href="#"><img src="images/f4_img4.png" /></a>
+                    <span>找政策</span>
+                </p>
+                <p class="fr">
+                    <a href="#"><img src="images/f4_img5.png" /></a>
+                    <span>找融资</span>
+                </p>
+            </div>
+        </div>
+        <div class="float4_left3 fr">
+            <a href="#"><img src="images/f4_img6.png" /></a>
+            <span>找商机</span>
+        </div>
+        <div class="float4_bottm">
+            <div class="float4_bottm1 fl">
+                <p class="fl"><a href="#">要上市</a></p>
+                <p class="fl"><a href="#">找导师</a></p>
+                <p class="fl"><a href="#">找合作</a></p>
+                <p class="fr"><a href="#">产权交易</a></p>
+                <p class="fl"><a href="#">法律咨询</a></p>
+                <p class="fl"><a href="#">资质认证</a></p>
+                <p class="fl"><a href="#">要咨询</a></p>
+                <p class="fr"><a href="#">商标注册</a></p>
+            </div>
+            <div class="float4_bottm2 fr">
+                <p><a href="#">要上市</a></p>
+            </div>
+        </div>
+    </div>
+    <div id="floor5" class="float">
+        <div class="float5_left1 fl">
+            <p>
+                <span><a href="#">成为培训商</a></span>
+                <span><a href="#">参加学习</a></span>
+            </p>
+        </div>
+        <div class="float5_left2 fr">
+            <div class="float5_left21">
+                <ul>
+                    <li><a href="#">热门课程</a></li>
+                    <li class="active"><a href="#">职业技能课程</a></li>
+                    <li><a href="#">创业辅导课程</a></li>
+                    <li><a href="#">网校推荐</a></li>
+                </ul>
+            </div>
+            <div class="float5_left22">
+                <div class="live_class fl" onclick="window.open('http://www.ablesky.com/kecheng/detail_974792')">
+                    <img src="images/class_img1.png" />
+                    <div>
+                        <span>课程：Smart node</span>
+                        <span>讲师：陈老师</span>
+                        <span>时长：16:45:00</span>
+                    </div>
+                    <p>立即学习</p>
+                </div>
+                <div class="live_class fl" onclick="window.open('http://www.ablesky.com/kecheng/detail_960659')">
+                    <img src="images/class_img2.png" />
+                    <div>
+                        <span>课程：限位块的安装</span>
+                        <span>讲师：王老师</span>
+                        <span>时长：21:55:12</span>
+                    </div>
+                    <p>立即学习</p>
+                </div>
+                <div class="live_class fl" onclick="window.open('http://www.ablesky.com/kecheng/detail_960656')">
+                    <img src="images/class_img3.png" />
+                    <div>
+                        <span>课程：送丝部件安装</span>
+                        <span>讲师：王老师</span>
+                        <span>时长：15:36:45</span>
+                    </div>
+                    <p>立即学习</p>
+                </div>
+                <div class="live_class fr" onclick="window.open('http://www.ablesky.com/kecheng/detail_960655')">
+                    <img src="images/class_img4.png" />
+                    <div>
+                        <span>课程：框架安装</span>
+                        <span>讲师：王老师</span>
+                        <span>时长：02:15:23</span>
+                    </div>
+                    <p>立即学习</p>
+                </div>
+                <div class="live_class fl" onclick="window.open('http://www.ablesky.com/kecheng/detail_960653')">
+                    <img src="images/class_img5.png" />
+                    <div>
+                        <span>课程：pcduino教学视频</span>
+                        <span>讲师：陈老师</span>
+                        <span>时长：16:45:00</span>
+                    </div>
+                    <p>立即学习</p>
+                </div>
+                <div class="live_class fl" onclick="window.open('http://www.ablesky.com/kecheng/detail_960652')">
+                    <img src="images/class_img6.png" />
+                    <div>
+                        <span>课程：byob创意教程</span>
+                        <span>讲师：王老师</span>
+                        <span>时长：21:55:12</span>
+                    </div>
+                    <p>立即学习</p>
+                </div>
+                <div class="live_class fl" onclick="window.open('http://www.ablesky.com/kecheng/detail_959298')">
+                    <img src="images/class_img7.png" />
+                    <div>
+                        <span>课程：Autodesk</span>
+                        <span>讲师：王老师</span>
+                        <span>时长：15:36:45</span>
+                    </div>
+                    <p>立即学习</p>
+                </div>
+                <div class="live_class fr" onclick="window.open('http://www.ablesky.com/kecheng/detail_960660')">
+                    <img src="images/class_img8.png" />
+                    <div>
+                        <span>课程：创客大爆炸</span>
+                        <span>讲师：王老师</span>
+                        <span>时长：02:15:23</span>
+                    </div>
+                    <p>立即学习</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hzdw">
+        <div class="hzdw1">
+            <ul>
+                <li class="active">合作伙伴</li>
+                <li>行业协会</li>
+                <li>政府、园区</li>
+            </ul>
+        </div>
+        <div class="hzdw2">
+            <ul>
+                <li>浙江省现代纺织工业研究院</li>
+                <li>中国中小企业服务平台</li>
+                <li>浙江省现代纺织工业研究院</li>
+                <li>中国中小企业服务平台</li>
+                <li>浙江省现代纺织工业研究院</li>
+                <li>中国中小企业服务平台</li>
+                <li>浙江省现代纺织工业研究院</li>
+                <li>中国中小企业服务平台</li>
+                <li>浙江省现代纺织工业研究院</li>
+                <li>中国中小企业服务平台</li>
+                <li>浙江省现代纺织工业研究院</li>
+                <li>中国中小企业服务平台</li>
+                <li>浙江省现代纺织工业研究院</li>
+                <li>中国中小企业服务平台</li>
+                <li>浙江省现代纺织工业研究院</li>
+                <li>中国中小企业服务平台</li>
+                <li>浙江省现代纺织工业研究院</li>
+                <li>中国中小企业服务平台</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer_content">
+            <div class="fc1 fl">
+                <p class="fc1_p1">客服热线  010-68200382</p>
+                <p class="fc1_p2">服务时间  9:00-17:00</p>
+                <p class="fc1_p3"><label>在线咨询</label><a href="#"><img src="images/ft_img4.png" /></a></p>
+            </div>
+            <div class="fc2 fl">
+                <p>
+                    Copyright ? 2015-2020<br />
+                    创客中国cnmaker.org.cn 版权所有<br />
+                    京ICP备 04000001号-4<br />
+                    技术支持：chenjm@dream-it.cn
+                </p>
+            </div>
+            <div class="fc2 fl">
+                <p>
+                    <img src="images/ft_img5.png" />
+                    <img src="images/ft_img6.png" />
+                </p>
+            </div>
+            <div class="fc3">
+                <img src="images/ft_img7.png" /><br />
+                微信公众号
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#serach_type_ul li").click(function () {
+            $(this).parent().find("li").removeClass("active");
+            $(this).addClass("active");
+        });
+        //搜索框
+        $("#mk_ddl_serach .ml-sel-list ul li").click(function () {
+            $("#mk_ddl_serach").attr("attr-selindex", $(this).attr("attr-index")).find(".mk-sel-text").text($(this).find("a").text());
+            $(this).parent().find("li").show();
+            $(this).hide();
+        });
+
+        $('#nav_gotop').click(function () { $('html,body').animate({ scrollTop: '0px' }, 800); });
+
+        slideMethod();
+        floorLocation();
+        rollSlide("page2_roll");
+        rollSlide("page3_roll");
+    });
+
+
+    //图片轮播
+    var nowIndex = 0;
+    function slideMethod()
+    {
+        $(".mk-thumbnail-list .item").mouseenter(function () {
+            clearInterval(window.Interval);
+            $(".mk-thumbnail-list .item").removeClass("active");
+            $(this).addClass("active");
+            $(".mk-exhibition-wrap").css("background-image", "url(" + $(this).attr("attr-img") + ")");
+            nowIndex = parseInt($(this).attr("attr-index"));
+            //console.log($(this));
+        }).mouseleave(function () {
+            slideTime();
+            //console.log($(this));
+        });
+        if (window.Interval)
+        {
+            clearInterval(window.Interval);
+        }
+        slideTime();
+    }
+    function slideTime()
+    {
+        window.Interval = setInterval(function () {
+            nowIndex = nowIndex + 1 > 3 ? 0 : nowIndex + 1;
+            $(".mk-thumbnail-list .item").removeClass("active");
+            var showThumbnail = $(".mk-thumbnail-list .item").eq(nowIndex);
+            showThumbnail.addClass("active");
+            $(".mk-exhibition-wrap").css("background-image", "url(" + showThumbnail.attr("attr-img") + ")");
+
+        }, 3000);
+    }
+
+    //楼层定位
+    function floorLocation()
+    {
+        $(window).scroll(function () {
+            // 获得窗口滚动上去的距离
+            var ling = $(document).scrollTop();
+            // 如果滚动距离大于1534的时候让滚动框出来
+            if (ling > 730) {
+                $('#floor_box').show();
+            }
+            if (730 < ling && ling < 1300) {
+                $("#floor_box .floor").removeClass("active");
+                $("#floor_box .f1").addClass("active");
+            } else if (ling < 1800) {
+                $("#floor_box .floor").removeClass("active");
+                $("#floor_box .f2").addClass("active");
+            } else if (ling < 2300) {
+                $("#floor_box .floor").removeClass("active");
+                $("#floor_box .f3").addClass("active");
+            } else if (ling < 2600) {
+                $("#floor_box .floor").removeClass("active");
+                $("#floor_box .f4").addClass("active");
+            } else if (ling < 2850) {
+                $("#floor_box .floor").removeClass("active");
+                $("#floor_box .f5").addClass("active");
+            }
+
+            if (ling > 2850 || ling < 730) {
+                $('#floor_box').hide();
+            }
+            if (ling > 146) {
+                $("#fixed_serach").css("top","0px");
+            } else {
+                $("#fixed_serach").css("top", "-70px");
+            }
+            if (ling > 10) {
+                $('#nav_gotop').show();
+            } else {
+                $('#nav_gotop').hide();
+            }
+        })
+    }
+
+    //<div id="page2_roll" attr-npage="0">
+    //            <div class="float_left2_top pagecontent">
+    //                <div class="roll-wrap">
+    //                    <p><a href="#"><img src="images/f1_banner1.png" /></a></p>
+    //                    <p><a href="#"><img src="images/f1_banner1.png" /></a></p>
+    //                </div>
+    //            </div>
+    //            <div class="pagenation">
+    //                <p>
+    //                    <span class="active" attr-src="images/f1_banner1.png" attr-url></span>
+    //                    <span attr-src="images/f1_banner1.png"></span>
+    //                    <span attr-src="images/f1_banner1.png"></span>
+    //                </p>
+    //            </div>
+    //        </div>
+
+    //楼层图片轮播
+    function rollSlide(id)
+    {
+        var roll = $("#" + id + "");
+        var npage = parseInt(roll.attr("attr-npage"));
+        var lenpage = roll.find(".pagenation span[attr-src]").length;
+        if (lenpage < 2)
+        {
+            return;
+        }
+        var nextImgSrc1 = roll.find(".pagenation span[attr-src]").eq(0).attr("attr-src"),
+            nextImgUrl1 = roll.find(".pagenation span[attr-src]").eq(0).attr("attr-url");
+        var nextImgSrc2 = roll.find(".pagenation span[attr-src]").eq(1).attr("attr-src"),
+            nextImgUrl2 = roll.find(".pagenation span[attr-src]").eq(1).attr("attr-url");
+        //初始化
+        roll.find(".roll-wrap").empty().append('<p><a href="' + nextImgUrl1 + '"><img src="' + nextImgSrc1 + '" /></a></p>');
+        roll.find(".roll-wrap").append('<p><a href="' + nextImgUrl2 + '"><img src="' + nextImgSrc2 + '" /></a></p>');
+
+        var setIntFun = function () {
+            if (lenpage > 1) {
+                //然后把npage+1的src添加进去
+                npage = npage + 1 >= lenpage ? 0 : npage + 1;
+                intervalFun(roll, npage);
+            } else {
+                clearInterval(setIntTime);
+            }
+        }
+
+        var setIntTime = setInterval(setIntFun, 3000);
+
+        roll.find(".pagenation span[attr-src]").click(function () {
+            clearInterval(setIntTime);
+            npage = parseInt($(this).attr("attr-index"));
+            intervalFun(roll, npage);
+            setIntTime = setInterval(setIntFun, 3000);
+        });
+
+
+        var intervalFun = function (proll, pnpage) {
+            //执行之前先把第一个删除掉
+            proll.find(".pagecontent").find("p").eq(0).remove();
+            proll.attr("attr-npage", pnpage);
+            var nextImgSrc = proll.find(".pagenation span[attr-src]").eq(pnpage).attr("attr-src"),
+            nextImgUrl = proll.find(".pagenation span[attr-src]").eq(pnpage).attr("attr-url");
+            proll.find(".roll-wrap").append('<p><a href="' + nextImgUrl + '"><img src="' + nextImgSrc + '" /></a></p>');
+            proll.find(".pagecontent").find("p").eq(0).css("margin-left", "-600px");
+            //设置下面选中
+            proll.find(".pagenation span[attr-src]").removeClass("active").eq(pnpage).addClass("active");
+        }
+    }
+    
+</script>
